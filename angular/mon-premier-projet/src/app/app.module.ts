@@ -6,13 +6,15 @@ import { MonSuperComposantComponent } from './mon-super-composant/mon-super-comp
 import { MonDeuxiemeComposantComponent } from './components/mon-deuxieme-composant/mon-deuxieme-composant.component';
 import { FormsModule, NgForm } from '@angular/forms';
 import { BingoPipe } from './bingo.pipe';
+import { SummaryPipe } from './summary.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MonSuperComposantComponent,
     MonDeuxiemeComposantComponent,
-    BingoPipe
+    BingoPipe,
+    SummaryPipe
   ],
   imports: [
     BrowserModule,

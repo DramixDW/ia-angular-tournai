@@ -24,7 +24,8 @@
     start 
 </button>
 <input #foire type="text" [(ngModel)]="inputValue" (keyup.enter)="onKeyUp(foire)"/>
-{{inputValue | bingo }}
+{{inputValue | bingo : 'Lucien' : 'Raymond'}}
+{{inputValue | summary  }}
 
 
 

@@ -6,7 +6,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class BingoPipe implements PipeTransform {
 
   transform(value: string, ...args: unknown[]): unknown {
-    return value.replace('Rachid', 'BINGO');
+    if (args.includes(value)) {
+        return 'Bingo'
+    }
+    return value;
   }
 
 }
