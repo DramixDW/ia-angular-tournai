@@ -1,0 +1,55 @@
+<p class="{{fruit}}" >mon-super-composant works!</p>
+
+{{ cariable }}
+
+<div *ngIf="fruit === 'banane'" [class.isDisplayed]="isDisplayed" [style.color]="isDisplayed ? 'red' : 'purple'">
+    Ce texte était caché ;-)
+</div>
+
+<div *ngFor="let movie of movies">
+    <div>
+        <h3>
+            {{movie.title}}
+        </h3>
+        <p>
+            {{movie.description}}
+        </p>
+    </div>
+</div>
+
+{{coucou.join('----------------------------')}}
+
+<img src="{{imgSrc}}" [alt]="first.toUpperCase()">
+<button (click)="startTimer()">
+    start 
+</button>
+<input #foire type="text" [(ngModel)]="inputValue" (keyup.enter)="onKeyUp(foire)"/>
+{{inputValue | bingo }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
