@@ -1,0 +1,13 @@
+<app-counter [initialValue]="value" (plus)="plusEventFunc($event)" (minus)="minusEventFunc($event)"></app-counter>
+<app-counter [initialValue]="value2" (plus)="plusFiveEventFunc($event)" (minus)="minusFiveEventFunc($event)"></app-counter>
+<app-projecteur>
+    Suricate énervé
+    <ng-container  footer="footer">
+        footer mais pas footeux
+    </ng-container>
+</app-projecteur>
+<app-zippy [isOpen]="isOpened" (divOpen)="opened($event)">
+        <p>
+            Ceci est une bétise caché (:)
+        </p>
+</app-zippy>

@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mon-regretté-café';
+  value: number = 42;
+  isOpened : boolean = false; 
+
+  opened({ isOpened }: {isOpened : boolean}) {
+    this.isOpened = !isOpened;
+  }
 }

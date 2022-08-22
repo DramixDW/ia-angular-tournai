@@ -1,0 +1,11 @@
+button {
+    float: right;
+}
+
+.container {
+    width: 200px;
+}
+
+.isOpen {
+    rotate: 90deg;
+}

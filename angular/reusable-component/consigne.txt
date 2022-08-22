@@ -1,0 +1,5 @@
+Créer un composant réutilisable Zippy
+C'est une boîte qui arrive fermé
+Vous pouvez lui transmettre un titre
+et elle a un boutton qui permet d'ouvrir la boîte.
+une fois la boîte ouverte, de l'html apparaît 

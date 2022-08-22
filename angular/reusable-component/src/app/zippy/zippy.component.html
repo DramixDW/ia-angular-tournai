@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="title">
+        <h2>
+            Ceci est mon titre
+        </h2>
+        <button type="button" [class.isOpen]="isOpened" (click)="opened()">
+            >
+        </button>
+    </div>
+    <div>
+        <ng-content *ngIf="isOpened"></ng-content>
+    </div>
+</div>
