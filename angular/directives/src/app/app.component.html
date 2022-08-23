@@ -1,0 +1,75 @@
+<div *ngIf="false">
+    Je suis là
+</div>
+
+<!-- utiliser let dans le for of-->
+<ol>
+    <li *ngFor="let number of [1,2,3,4]">
+      {{ number }}
+    </li>
+</ol>
+
+<!-- ngTemplate -->
+<ng-template #partir>
+    J'ai envie de partir
+</ng-template>
+
+<ng-template #rester>
+    J'ai envie de rester
+</ng-template>
+
+<div *ngIf="false then rester else partir">
+   Ce texte ne s'affichera jamais, j'écris pour le plaisir mouhahahahaha
+</div>
+
+<!-- switch -->
+<button type="button" (click)="viewMode = 'kanban'">
+      Kanban
+</button>
+
+<button type="button" (click)="viewMode = 'list'">
+      List
+</button>
+
+
+<div [ngSwitch]="viewMode">
+  <div *ngSwitchCase="'kanban'"> Kanban</div>
+  <div *ngSwitchCase="'list'"> List</div>
+  <div *ngSwitchDefault> Default</div>
+</div>
+
+<div [ngClass]="{
+  'isActive': true,
+  'isUgly': false,
+  'is5pm': true
+}"
+  [ngStyle]="{
+    'background-color': true ? 'purple' : 'pink',
+    'color': viewMode == 'kanban' ? 'burlywood' : 'chartreuse'
+  }"
+
+  appTropBien
+>
+    fhjkhdkjfhqsdkjqdfhs
+</div>
+
+
+<div appTropBien>
+  Trop Bien
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
