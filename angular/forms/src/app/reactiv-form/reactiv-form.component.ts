@@ -11,7 +11,7 @@ export class ReactivFormComponent implements OnInit {
   form = new FormGroup({
     username: new FormControl('guest', [
       Validators.required,
-      Validators.minLength(7),
+      Validators.minLength(4),
       hasUpperCase(),
     ], isTaken),
     password: new FormControl('', Validators.required)

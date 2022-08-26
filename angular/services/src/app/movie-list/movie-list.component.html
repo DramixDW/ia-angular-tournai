@@ -1,0 +1,12 @@
+<input #title type="text" (keyup.enter)="addMovie(title)" />
+<ul>
+    <li *ngFor="let movie of movies" [class.seb]="movie.seen">
+        {{ movie.title }}
+        <button type="button" (click)="updateMovie(movie)">
+            Update Vu
+        </button>
+        <button type="button" (click)="deleteMovie(movie.id)">
+         Suppression définitive
+        </button>
+    </li>
+</ul>
