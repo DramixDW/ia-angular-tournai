@@ -1,0 +1,4 @@
+iCréer une directive HighLight
+quand vous passer la souris au dessus de l'element
+son backgroundColor change
+et le texte passe en majuscule

@@ -1,0 +1,53 @@
+<form #form="ngForm" (ngSubmit)="submit(form)">
+    <div>
+        <label for="firstname">firstname</label>
+        <input
+            #firstname="ngModel" 
+            type="text"
+            id="firstname"
+            name="fn" 
+            ngModel
+            required
+            minlength="5"
+            autofocus
+            />
+            <div class="danger" *ngIf="firstname.invalid && firstname.touched">
+                <ul>
+                    <li *ngIf="firstname.errors?.['required']">
+                        Le prénom est requis.
+                    </li>
+                    <li *ngIf="firstname.errors?.['minlength']">
+                        Le prénom est trop court. Il faut {{firstname.errors?.['minlength']?.['requiredLength']}} lettres.
+                    </li>
+                </ul>
+            </div>
+    </div>
+    <div>
+        <label for="comment">Comment</label>
+        <textarea 
+            id="comment"
+            name="cmt" 
+            >
+        </textarea>
+    </div>
+    <div>
+        <label for="contactMethod">
+            Méthode de contact
+        </label>
+        <select name="" id="contactMethod" [(ngModel)]="selected" name="contactMethod">
+            <option *ngFor="let method of contactMethods" [value]="method">
+                {{ method }}
+            </option>
+        </select>
+        <div *ngFor="let method of contactMethods">
+            <label>
+                <input type="radio" name="contactMethod" [value]="method" [(ngModel)]="selected">
+                {{method}}
+            </label>
+
+        </div>
+    </div>
+    <button type="submit">
+        Poster votre commentaire
+    </button>
+</form>
