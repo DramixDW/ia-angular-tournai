@@ -1,0 +1,31 @@
+.formWrapper {
+    border: 2px solid black;
+    padding: 20px;
+    width: 30%;
+}
+
+.inputWrap {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.wrap {
+    border: 1px solid black;
+    padding: 20px;
+    width: 30%;
+}
+
+.movie {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+.title {
+    cursor: pointer;
+}

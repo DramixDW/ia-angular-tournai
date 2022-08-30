@@ -1,0 +1,16 @@
+Créer une application
+
+Sur notre page d'acceuil,
+Une liste des titres de nos films.
+si on clique sur un des titres, un formulaire
+apparaît, pré-remplie avec les informations du film
+et on va pouvoir utiliser le formulaire pour mettre
+le film à jour. dans la liste, à côté du titre
+on va rajouter un boutton destiné à la suppression
+
+
+Bonus: Modal êtes-vous sûr de vouloir
+supprimer le film ? 
+
+
+Bonus 2: Un café qui dance

@@ -1,0 +1,48 @@
+<div class="wrap">
+    <h2>
+        Liste de film
+    </h2>
+    <div *ngFor="let movie of movies" class="movie">
+        <span (click)="selectMovie(movie)" class="title">
+            {{ movie.title }}
+        </span>
+        <button type="button" (click)="deleteMovie(movie.id)">
+            Supprimer
+        </button>
+    </div>
+</div>
+<div>
+    <form [formGroup]="form" class="formWrapper" (ngSubmit)="updateMovie()">
+        <h2 *ngIf="selectedMovie">
+            {{ selectedMovie.title }}
+        </h2>
+        <div class="inputWrap">
+            <label for="title">
+                Titre
+            </label>
+            <input type="text" formControlName="title" id="title" class="inputWrap">
+        </div>
+        <div class="inputWrap">
+            <label for="description">
+                Description
+            </label>
+            <textarea type="text" formControlName="description" id="description">
+            </textarea>
+        </div>
+        <div class="inputWrap">
+            <label for="seen">
+                Vu
+                <input type="checkbox" formControlName="seen" id="seen">
+            </label>
+        </div>
+        <div class="inputWrap">
+            <label for="rating">
+                Évaluation
+            </label>
+            <input type="text" formControlName="rating" id="rating">
+        </div>
+        <button type="submit">
+            Valider
+        </button>
+    </form>
+</div>

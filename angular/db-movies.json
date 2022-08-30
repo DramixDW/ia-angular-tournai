@@ -15,18 +15,11 @@
       "rating": 7
     },
     {
-      "title": "Sharknado 2",
-      "description": "Requin !",
-      "id": 4,
-      "seen": false,
-      "rating": 8
-    },
-    {
-      "title": "Rocky 2",
+      "title": "Rocky 3",
       "description": "la suite de Rocky, je suppose ",
       "id": 7,
       "seen": false,
-      "rating": 8
+      "rating": 0
     },
     {
       "title": "Quand Emmanuel s'en mêle",
