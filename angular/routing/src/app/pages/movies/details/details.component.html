@@ -1,0 +1,30 @@
+<form [formGroup]="form" class="formWrapper">
+    <h2 *ngIf="title">
+        {{ title }}
+    </h2>
+    <div class="inputWrap">
+        <label for="title">
+            Titre
+        </label>
+        <input type="text" formControlName="title" id="title" class="inputWrap">
+    </div>
+    <div class="inputWrap">
+        <label for="description">
+            Description
+        </label>
+        <textarea type="text" formControlName="description" id="description">
+        </textarea>
+    </div>
+    <div class="inputWrap">
+        <label for="seen">
+            Vu
+            <input type="checkbox" formControlName="seen" id="seen">
+        </label>
+    </div>
+    <div class="inputWrap">
+        <label for="rating">
+            Évaluation
+        </label>
+        <input type="text" formControlName="rating" id="rating">
+    </div>
+</form>

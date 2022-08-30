@@ -1,0 +1,8 @@
+<div>
+    <a [routerLink]="[movie.id]" *ngFor="let movie of movies">
+        <span>
+            {{movie.title}}
+        </span>
+    </a>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,8 @@
+Créer une application avec le routing
+
+-Une page Home qui acceuillera nos visiteurs
+-Une page 404 not found qui indiquera à nos visiteurs qu'ils ne sont pas sur la bonne page
+-Une page github avec une liste qui contiendra 2 pseudos : 'Octocat', 'DramixDW'
+	-Lorsqu'on clique sur un pseudonyme, en dessous de la liste, on va venir afficher un lien vers le profile github de la personne
+	Ainsi que la liste de ses followers ( avatar_url, login )
+	( Url Api: 'https://api.github.com/users/:pseudonyme/followers' <= récupérer les followers d'une personne )
